@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR DEAL</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Nouveau dossier/logo/logo.png" alt="logo">
+        <nav>
+            <!-- <ul>
+                <li><samp class="nav_element"><a href="">Menu</a></samp></li>
+                <li><samp class="nav_element"><a href="">About</a></samp></li>
+                <li><samp class="nav_element"><a href="">Contact</a></samp></li>
+                <li><samp class="nav_element"><a href="">Gérer votre réservation</a></samp></li>
+            </ul> -->
+
+            <div class="nav_links">
+                <samp class="nav_element"><a href="">Menu</a></samp>
+                <samp class="nav_element"><a href="">About</a></samp>
+                <samp class="nav_element"><a href="">Contact</a></samp>
+                <samp class="nav_element"><a href="">Gérer votre réservation</a></samp>
+            </div>
+
+            <div class="menu_resp" onclick="hundleMenu()" id="mobile-menu">
+                <div class="1"></div>
+                <div class="2"></div>
+                <div class="3"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    <div>
+        <img class="back_image"  src="/Nouveau dossier/back/back.jpg" alt="">
+   </div>
+
+    <main>
+       
+    <!-- <div class="zone_container">
+        
+    </div> -->
+
+    <div class="zone_reservation">
+        <a href=""> <button class="btn_reserver"> Reserver </button> </a>
+     </div>
+
+     
+
+     <div class="galerie">
+
+        <div class="galerie_h2">
+            <h2>GALERIE</h2>
+        </div>
+
+     <div class="galerie_images"> 
+
+        
+
+         <div class="colone1" id="colone">
+             <img class="colone1_images" id="c1i1" src="/Nouveau dossier/c1i1.jpg" alt="">
+             <img class="colone1_images" id="c1i2" src="/Nouveau dossier/c1i2.jpg" alt="">
+             <img class="colone1_images" id="c1i3" src="/Nouveau dossier/C1I3.jpg" alt="">
+             <img class="colone1_images" id="c1i4" src="/Nouveau dossier/C1I4.jpg" alt="">
+         </div>
+         <div class="colone2" id="colone">
+            <img class="colone2_images" id="c2i1" src="/Nouveau dossier/C2I1.jpg" alt="">
+            <img class="colone2_images" id="c2i2" src="/Nouveau dossier/C2I2.jpg" alt="">
+            <img class="colone2_images" id="c2i3" src="/Nouveau dossier/C2I3.png" alt="">
+         </div>
+         <div class="colone3" id="colone">
+            <img class="colone3_images" id="c3i1" src="/Nouveau dossier/C3I1.jpg" alt="">
+            <img class="colone3_images" id="c3i2" src="/Nouveau dossier/C3I2.jpg" alt="">
+            <img class="colone3_images" id="c3i3" src="/Nouveau dossier/C3I3.jpg" alt="">
+            <img class="colone3_images" id="c3i4" src="/Nouveau dossier/C3I4.jpg" alt="">
+           
+         </div>
+     </div>
+    </div>
+
+        
+       
+    </main>
+
+    
+
+
+
+
+
+    <footer>
+        <div class="f_c_1">
+            <h2>Entreprise</h2>
+            <div>
+                <a href=""><p> À propos de nous </p></a>
+                <a href=""><p> Affiliés </p></a>
+                <a href=""><p> Aide </p></a>
+                <a href=""><p> FAQ </p></a>
+            </div>
+        </div>
+
+        <div class="f_c_1">
+            <h2>Suivez-nous</h2>
+            <div>
+                <div>
+                    <a href="https://twitter.com" >
+                        <div class="TW">Twitter</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.facebook.com" >
+                        <div class="FB">Facebook</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com" >
+                        <div class="TW">instagram</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="f_c_3">
+           <div> 
+               <div class="N">
+                   <h2>Telephone number</h2>
+                   <p> +44 20 3740 9859 </p>
+               </div>
+               
+               <div class="E">
+                    <h2>Email</h2>
+                    <p> contact@car.deal.com </p>
+               </div>
+           </div>
+        </div>
+    </footer>
+     
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="main.js">
+    <script>
+        const hundleMenu =()=>{//arrow func
+            document.querySelector('.nav_links').style.transform = "translateX(0%)"
+            document.querySelector('.nav_links').style.opacity = "1"
+        }
+    </script>
+  
+</body>
+</html>
