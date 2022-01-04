@@ -1,0 +1,159 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+.logo {
+    width: 7%;
+    height: 4%;
+    margin: 0.5% 0 1% 2%;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
+    /* height: 5%; */
+    /* background-color: #0176AC; */
+}
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+.nav_links a {
+    color: #0176AC;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav_links li {
+    list-style: none;
+    cursor: pointer;
+}
+.menu_resp div{
+    width: 35px;
+    height: 4px;
+    background-color: #104159;
+    margin: 7px;
+}
+
+/* .menu_resp {
+    margin: -4.5% 1% 4.5% 102%;
+} */
+.menu_resp {
+    display:none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .logo {
+        width: 14%;
+        margin: 0.5% 0 1% 2%;
+    }
+    .nav_links {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 9.3vh;
+        background-color: #104159;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        z-index: 10;
+    }
+    /* .nav_links li {
+        opacity: 0;
+    } */
+    .menu_resp {
+        display: block;
+    }
+    header {
+        margin: 0 5%;
+        
+    }
+
+
+    
+
+
+}
+
+.nav_active {
+    transform: translateX(0%);
+}
+.toggle #l1 {
+    transform: rotate(-45deg) 
+    translate(-010px,14px);
+}
+.toggle #l2 {
+    opacity: 0;
+}
+.toggle #l3 {
+    transform: rotate(45deg) 
+    translate(0px,-6px);
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #104159;
+    width: 100%;
+    height: 220px;
+    padding: 35px 0;
+
+    display:flex;
+    /* gap: 20%; */
+    justify-content: space-around;
+    color: white;
+}
+footer h2 {
+    margin-bottom:20px;
+}
+.f_c_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.f_links a {
+    text-decoration: none;
+    color: white;
+    
+}
+.f_links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer li, .f_c_3 {
+        text-align: center;
+    }
+    .f_c_3 {
+        gap: 45px;
+    }
+    
+}

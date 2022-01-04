@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>reservation</title>
     <link rel="stylesheet" href="header-footer.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="reservation.css">
     
 </head>
 <body>
@@ -32,24 +32,31 @@
 
 <main class="" id="">
 
-    <form action="" method="get">
+    <form class="form_" action="" method="get">
         <div class="cont">
-            <p>CONTACT US</p>
+            <p>RESERVATION</p>
             
-            <div class="login">
-                <input type="text" placeholder="votre nom" class="input_n">
-                <input type="email" placeholder="username.@email.com" class="input_e">
+            <div>
+                <select name="type" class="select_tp">
+                    <optgroup>
+                        <option value="ch" id="ch">choisir</option>
+                        <option value="Moto" id="Moto" >Moto</option>
+                    </optgroup>
+                    <optgroup id="Manuelle" label="Manuelle">
+                        <option value="Citadine" id="Citadine">Citadine</option>
+                        <option value="Compact" id="Compact">Compact</option>
+                        <option value="Utilitaire" id="Utilitaire">Utilitaire</option>
+                        <option value="Engin" id="Engin">Engin de Chantier</option>
+                    </optgroup>
+                    <optgroup id="Automatique" label="Automatique">
+                        <option value="Berline" id="Berline">Berline</option>
+                        <option value="Camion" id="Camion">Camion</option>
+                    </optgroup>
+                </select>
+
             </div>
-            
-            <div class="sujet">
-                <input type="text" placeholder="Sujet" class="input_s">       
-            </div>
-            
-            <div class="msg">
-                <textarea  class="area" placeholder="Leave a Message"></textarea> 
-            </div>
-            
-            <input class="btn_send" type="submit" value="Send">
+
+        
         </div>
     </form>
 
@@ -102,7 +109,7 @@
     
     
     
-    <script>
+    <script src="res.js">
         const navSlide = () => {
             const burger = document.querySelector('.menu_resp');
             const nav = document.querySelector('.nav_links');

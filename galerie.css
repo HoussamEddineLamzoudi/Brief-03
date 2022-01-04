@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+main {
+    background-color: #0176AC;
+
+}
+main h1 {
+    text-align: center;
+    padding: 4% 0 1% 0;
+}
+
+.galerie {
+    margin: 3% 3% 0.2% 3%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.box {
+    width: calc(88%/3);
+    background-color: #eee;
+    padding: 3% 2%;
+    border-radius: 7px;
+}
+.row1, .row2,
+.row3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+img {
+    width: 90%;
+    margin: 0% 4% 10%;
+}
+.box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn_res {
+    padding: 6% 20%;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0176AC;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px #104159;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 10% 0% 0% 16%;
+   }
+   
+   .btn_res {
+    background-color: #0176AC;
+    box-shadow: 0px 15px 20px #104159;
+    color: rgb(255, 255, 255);
+    transform: translateY(-7px);
+   }
+   
+   .btn_res {
+    transform: translateY(-1px);
+   }
+
+   .btn_next {
+    color: #090909;
+    padding: 1.2% 2%;
+    font-size: 18px;
+    border-radius: 7.5px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5;
+    margin-left: 45%;
+    margin-top: 1%;
+   }
+
+   
+   .btn_next:hover {
+    border: 1px solid white;
+   }
+   
+   .btn_next:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+
+   @media screen and (max-width: 768px) {
+
+    .row1, .row2,
+    .row3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .box {
+        width: 95%;
+        background-color: #eee;
+        padding: 3% 2%;
+        border-radius: 7px;
+        margin: 5%;
+    }
+    .btn_res {
+        margin: 10% 0% 3% 20%;
+    }
+    
+    .galerie {
+        height: 4220px;
+    }
+    .btn_next {
+        margin-left: 39%;
+        margin-top: 4%;
+    }
+    
+   }
+
+
+

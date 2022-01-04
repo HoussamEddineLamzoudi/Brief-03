@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galerie_page_2</title>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="galerie_P2.css">
+
+</head>
+<body>
+    
+    <header>
+
+        <img class="logo" src="./Nouveau dossier/logo/logo.png" alt="logo">
+    
+        <ul class="nav_links">
+                <li><samp class="nav_element"><a href="./index.html">Menu</a></samp></li>
+                <li><samp class="nav_element"><a href="">About</a></samp></li>
+                <li><samp class="nav_element"><a href="./contact.html">Contact</a></samp></li>
+                <li><samp class="nav_element"><a href="./galerie.html">nos véhicules</a></samp></li>
+        </ul>
+    
+        <div class="menu_resp" onclick="navSlide()" id="mobile-menu">
+            <div id="l1"></div>
+            <div id="l2"></div>
+            <div id="l3"></div>
+        </div>
+    
+    </header>
+    <main>
+
+        <h1>nos véhicules</h1>
+
+        <div class="galerie">
+            <div class="row1">
+                <div class="box">
+                    <img src="./galerie/Jeep® Renegade 120 ch.png" alt="">
+                    <p class="typ_v">Jeep® Renegade 120 ch</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+
+                <div class="box">
+                    <img src="./galerie/Van à Chevaux.png" alt="">
+                    <p class="typ_v">Van à Chevaux</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+
+                <div class="box">
+                    <img src="./galerie/Camion Benne.png" alt="">
+                    <p class="typ_v">Camion Benne</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="box">
+                    <img src="./galerie/Fiat 124 Spider Abarth.jpg" alt="">
+                    <p class="typ_v">Fiat 124 Spider Abarth</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+
+                <div class="box">
+                    <img src="./galerie/Dacia Spring électrique.jpg" alt="">
+                    <p class="typ_v">Dacia Spring électrique</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+
+                <div class="box">
+                    <img src="./galerie/Renault Megane Estate.jpg" alt="">
+                    <p class="typ_v">Renault Megane Estate</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+            </div>
+
+            <div class="row3">
+                <div class="box">
+                    <img src="./galerie/c1.jpg" alt="">
+                    <p class="typ_v">Renault Clio</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+
+                <div class="box">
+                    <img src="./galerie/c2.png" alt="">
+                    <p class="typ_v">Opel Mokka</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+
+                <div class="box">
+                    <img src="./galerie/c3.jpg" alt="">
+                    <p class="typ_v">Remorque Réfrigérée</p>
+                    <a href=""> <button class="btn_res"> Réserver </button> </a>
+                </div>
+            </div>
+
+            <div class="next">
+                <a href="./galerie.html"> <button class="btn_next">&lt page 1</button> </a>
+                <a href=""> <button class="btn_next">page 2 &gt</button> </a>
+    
+            </div>
+        </div>
+        <!-- <div class="next">
+            <a href=""> <button class="btn_next">&lt page 1</button> </a>
+            <a href=""> <button class="btn_next">page 2 &gt</button> </a>
+
+        </div> -->
+    
+    </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+        <div class="f_c_1">
+            <h2>Entreprise</h2>
+            <ul class="f_links">
+                <li><a href=""><p> À propos de nous </p></a></li>
+                <li><a href=""><p> Affiliés </p></a></li>
+                <li><a href=""><p> Aide </p></a></li>
+                <li><a href=""><p> FAQ </p></a></li>
+            </ul>
+        </div>
+    
+        <div class="f_c_2">
+            <h2>Suivez-nous</h2>
+            <ul class="f_links">
+                <li><a href="https://twitter.com"><p class="TW">Twitter</p></a></li>
+                <li><a href="https://www.facebook.com"><p class="FB">Facebook</p></a></li>
+                <li><a href="https://www.instagram.com"><p class="TW">instagram</p></a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="f_c_3">
+    
+                <div class="N">
+                    <h2>Telephone number</h2>
+                    <p> +44 20 3740 9859 </p>
+                </div>
+                
+                <div class="E">
+                    <h2>Email</h2>
+                    <p> contact@car.deal.com </p>
+                </div>
+        </div>
+    
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.menu_resp');
+            const nav = document.querySelector('.nav_links');
+    
+            burger.addEventListener('click', () => {
+    
+            nav.classList.toggle('nav_active');
+            burger.classList.toggle('toggle');
+            });
+    }
+    </script>
+    
+    <link rel="stylesheet" href="main.js">
+
+</body>
+</html>

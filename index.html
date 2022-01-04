@@ -5,142 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAR DEAL</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
-    <header>
-        <img class="logo" src="/Nouveau dossier/logo/logo.png" alt="logo">
-        <nav>
-            <!-- <ul>
-                <li><samp class="nav_element"><a href="">Menu</a></samp></li>
-                <li><samp class="nav_element"><a href="">About</a></samp></li>
-                <li><samp class="nav_element"><a href="">Contact</a></samp></li>
-                <li><samp class="nav_element"><a href="">Gérer votre réservation</a></samp></li>
-            </ul> -->
-
-            <div class="nav_links">
-                <samp class="nav_element"><a href="">Menu</a></samp>
-                <samp class="nav_element"><a href="">About</a></samp>
-                <samp class="nav_element"><a href="">Contact</a></samp>
-                <samp class="nav_element"><a href="">Gérer votre réservation</a></samp>
-            </div>
-
-            <div class="menu_resp" onclick="hundleMenu()" id="mobile-menu">
-                <div class="1"></div>
-                <div class="2"></div>
-                <div class="3"></div>
-            </div>
-
-        </nav>
-    </header>
-
-    <div>
-        <img class="back_image"  src="/Nouveau dossier/back/back.jpg" alt="">
-   </div>
-
-    <main>
-       
-    <!-- <div class="zone_container">
-        
-    </div> -->
-
-    <div class="zone_reservation">
-        <a href=""> <button class="btn_reserver"> Reserver </button> </a>
-     </div>
-
-     
-
-     <div class="galerie">
-
-        <div class="galerie_h2">
-            <h2>GALERIE</h2>
-        </div>
-
-     <div class="galerie_images"> 
-
-        
-
-         <div class="colone1" id="colone">
-             <img class="colone1_images" id="c1i1" src="/Nouveau dossier/c1i1.jpg" alt="">
-             <img class="colone1_images" id="c1i2" src="/Nouveau dossier/c1i2.jpg" alt="">
-             <img class="colone1_images" id="c1i3" src="/Nouveau dossier/C1I3.jpg" alt="">
-             <img class="colone1_images" id="c1i4" src="/Nouveau dossier/C1I4.jpg" alt="">
-         </div>
-         <div class="colone2" id="colone">
-            <img class="colone2_images" id="c2i1" src="/Nouveau dossier/C2I1.jpg" alt="">
-            <img class="colone2_images" id="c2i2" src="/Nouveau dossier/C2I2.jpg" alt="">
-            <img class="colone2_images" id="c2i3" src="/Nouveau dossier/C2I3.png" alt="">
-         </div>
-         <div class="colone3" id="colone">
-            <img class="colone3_images" id="c3i1" src="/Nouveau dossier/C3I1.jpg" alt="">
-            <img class="colone3_images" id="c3i2" src="/Nouveau dossier/C3I2.jpg" alt="">
-            <img class="colone3_images" id="c3i3" src="/Nouveau dossier/C3I3.jpg" alt="">
-            <img class="colone3_images" id="c3i4" src="/Nouveau dossier/C3I4.jpg" alt="">
-           
-         </div>
-     </div>
-    </div>
-
-        
-       
-    </main>
-
     
 
+<header>
+
+    <img class="logo" src="./Nouveau dossier/logo/logo.png" alt="logo">
+
+    <ul class="nav_links">
+            <li><samp class="nav_element"><a href="./index.html">Menu</a></samp></li>
+            <li><samp class="nav_element"><a href="">About</a></samp></li>
+            <li><samp class="nav_element"><a href="./contact.html">Contact</a></samp></li>
+            <li><samp class="nav_element"><a href="./galerie.html">nos véhicules</a></samp></li>
+    </ul>
+
+    <div class="menu_resp" onclick="navSlide()" id="mobile-menu">
+        <div id="l1"></div>
+        <div id="l2"></div>
+        <div id="l3"></div>
+    </div>
+
+</header>
+<main>
+
+    <div class="B_img">
+        <img id="img"  src="./Nouveau dossier/back/back.jpg" alt="">
+        <div id="opa"></div>
+        <div id="title"><h1>Location de voitures <br> Cherchez, comparez et faites de vraies économies!<h1>
+            <p>Votre voyage commence maintenant chez-nous</p>
+        </div>
+        <!-- <p>Votre voyage commence maintenant</p> -->
+    </div>
+
+    <div class="zone_res"> 
+            <form action="" method="get">
+                <div class="ville">
+                    <input type="text" placeholder="Ville">
+                </div>
+                <div class="date">
+                    <div class="debu">
+                        <label for="debu">date de début</label>
+                        <input type="date" id="debu">
+                    </div>
+                    <div class="fin">
+                        <label for="fin">date de fin</label>
+                        <input type="date" id="fin">
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </form>
+            <a href="./reservation.html" ><button class="btn_res">réserver</button></a>
+    </div>
+
+</main>
 
 
 
 
-    <footer>
-        <div class="f_c_1">
-            <h2>Entreprise</h2>
-            <div>
-                <a href=""><p> À propos de nous </p></a>
-                <a href=""><p> Affiliés </p></a>
-                <a href=""><p> Aide </p></a>
-                <a href=""><p> FAQ </p></a>
+
+
+
+
+
+
+
+
+<footer>
+    <div class="f_c_1">
+        <h2>Entreprise</h2>
+        <ul class="f_links">
+            <li><a href=""><p> À propos de nous </p></a></li>
+            <li><a href=""><p> Affiliés </p></a></li>
+            <li><a href=""><p> Aide </p></a></li>
+            <li><a href=""><p> FAQ </p></a></li>
+        </ul>
+    </div>
+
+    <div class="f_c_2">
+        <h2>Suivez-nous</h2>
+        <ul class="f_links">
+            <li><a href="https://twitter.com"><p class="TW">Twitter</p></a></li>
+            <li><a href="https://www.facebook.com"><p class="FB">Facebook</p></a></li>
+            <li><a href="https://www.instagram.com"><p class="TW">instagram</p></a></li>
+        </ul>
+
+    </div>
+
+    <div class="f_c_3">
+
+            <div class="N">
+                <h2>Telephone number</h2>
+                <p> +44 20 3740 9859 </p>
             </div>
-        </div>
-
-        <div class="f_c_1">
-            <h2>Suivez-nous</h2>
-            <div>
-                <div>
-                    <a href="https://twitter.com" >
-                        <div class="TW">Twitter</div>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="https://www.facebook.com" >
-                        <div class="FB">Facebook</div>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="https://www.instagram.com" >
-                        <div class="TW">instagram</div>
-                    </a>
-                </div>
+            
+            <div class="E">
+                <h2>Email</h2>
+                <p> contact@car.deal.com </p>
             </div>
-        </div>
+    </div>
 
-        <div class="f_c_3">
-           <div> 
-               <div class="N">
-                   <h2>Telephone number</h2>
-                   <p> +44 20 3740 9859 </p>
-               </div>
-               
-               <div class="E">
-                    <h2>Email</h2>
-                    <p> contact@car.deal.com </p>
-               </div>
-           </div>
-        </div>
-    </footer>
-     
-        
+</footer>
 
 
 
@@ -150,16 +121,19 @@
 
 
 
+<script>
+    const navSlide = () => {
+        const burger = document.querySelector('.menu_resp');
+        const nav = document.querySelector('.nav_links');
 
+        burger.addEventListener('click', () => {
 
+        nav.classList.toggle('nav_active');
+        burger.classList.toggle('toggle');
+        });
+}
+</script>
 
-    <link rel="stylesheet" href="main.js">
-    <script>
-        const hundleMenu =()=>{//arrow func
-            document.querySelector('.nav_links').style.transform = "translateX(0%)"
-            document.querySelector('.nav_links').style.opacity = "1"
-        }
-    </script>
-  
+<link rel="stylesheet" href="main.js">
 </body>
 </html>

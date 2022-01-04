@@ -1,0 +1,95 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+
+.cont {
+  /* max-width: 75%; */
+  width: 75%;
+  height: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px #0176ac;
+  padding: 40px;
+}
+
+.cont p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #0176ac;
+}
+
+.input_n,
+.input_e,
+.input_s,
+.msg .area {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.login input {
+  width: 48%;
+}
+
+.msg .area {
+  height: 200px;
+}
+
+.btn_send {
+  padding: 2% 4%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0176ac;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px #104159;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 1% 0% 0% 45%;
+}
+
+.btn_send {
+  background-color: #0176ac;
+  box-shadow: 0px 15px 20px #104159;
+  color: rgb(255, 255, 255);
+  transform: translateY(-7px);
+}
+
+.btn_send {
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 768px) {
+  .cont {
+    width: 85%;
+    height: 650px;
+  }
+  .login {
+    flex-direction: column;
+  }
+  .login input {
+    width: 100%;
+  }
+  .btn_send {
+    padding: 4% 7%;
+    margin-left: 40%;
+  }
+}
