@@ -4,6 +4,14 @@ let d_h = document.createElement("div");
 let d_es = document.createElement("div");
 let d_d = document.createElement("div");
 
+let aff = document.createElement("div");
+aff.className = "aff_zon";
+let aff_p = document.createElement("p");
+aff.id = "aff_res";
+
+
+
+
 
 let elec = document.createElement("input");
 let hyp = document.createElement("input");
@@ -21,11 +29,29 @@ let t_hyp = document.createTextNode("Hybride");
 let t_esn = document.createTextNode("Essence");
 let t_dsl = document.createTextNode("Diesel");
 
+
+// tiiiiiiiiiiime
+
 let frm = document.querySelector(".form_");
 let cont = document.querySelector(".cont");
 
 let sel = document.querySelector(".select_tp");
 
+// let debu = document.querySelector("#debu");
+// let fin = document.querySelector("#fin");
+
+// let dateDebut = debu.valueAsDate;
+// let dateFin = fin.valueAsDate;
+
+// let duree = (dateFin - dateDebut)/86400000;
+
+
+
+// console.log(duree, fin.valueAsDate, debu.valueAsDate);
+
+const duration = new URLSearchParams(document.location.search).get("duration") ?? 1;
+
+// console.log("duration est: ", duration);
 let R = 0;
 
 
@@ -90,6 +116,7 @@ console.log ("r", R);
 
 sel.addEventListener("change", function () {
     let val = sel.value;
+    cont_c.innerHTML = "";
     switch (val) {
         case "Moto":
             cont_c.appendChild(d_e);
@@ -124,6 +151,7 @@ sel.addEventListener("change", function () {
             cont.appendChild(sub);
 
             R=16;
+            console.log(R);
             break;
         case "Engin":
             cont_c.appendChild(d_es);
@@ -139,6 +167,8 @@ sel.addEventListener("change", function () {
             cont.appendChild(sub);
 
             R=250;
+            R += (R*19)/100;
+            console.log(R);
             break;
         case "Berline":
             cont_c.appendChild(d_h);
@@ -148,11 +178,65 @@ sel.addEventListener("change", function () {
             cont.appendChild(sub);
 
             R=20;
+            R += (R*19)/100;
             break;
     
         default:
             break;
     }
 });
+
+
+frm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let val2 = document.querySelector("input[name='alm']:checked").value;
+    console.log(val2);
+
+    let aff_res ;
+
+    switch (val2) {
+        case "elec":
+            R += (R*5)/100;
+            R *= duration;
+
+            aff_res = `${R} $`;
+            aff_p.innerHTML = aff_res;
+            aff.appendChild(aff_p);
+            break;
+
+        case "hyp":
+            R += (R*9)/100;
+            R *= duration;
+            
+            aff_res = `${R} $`;
+            aff_p.innerHTML = aff_res;
+            aff.appendChild(aff_p);
+            break;
+
+        case "esn":
+            R += (R*14)/100;
+            R *= duration;
+            
+            aff_res = `${R} $`;
+            aff_p.innerHTML = aff_res;
+            aff.appendChild(aff_p);
+            break;
+
+        case "dsl":
+            R += (R*21)/100;
+            R *= duration;
+
+            aff_res = `${R} $`;
+            aff_p.innerHTML = aff_res;
+            aff.appendChild(aff_p);
+            break;
+       
+    
+        default:
+            break;
+    }
+    swal(aff_res);
+
+})
 
 

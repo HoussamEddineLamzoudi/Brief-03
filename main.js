@@ -1,12 +1,12 @@
 
-const navSlide = () => {
-    const burger = document.querySelector('.menu_resp');
-    const nav = document.querySelector('.nav_links');
+// const navSlide = () => {
+//     const burger = document.querySelector('.menu_resp');
+//     const nav = document.querySelector('.nav_links');
 
-    burger.addEventListener('click', () => {
-    nav.classList.toggle('nav_active');
-    });
-}
+//     burger.addEventListener('click', () => {
+//     nav.classList.toggle('nav_active');
+//     });
+// }
 
 // navSlide();
 
@@ -23,3 +23,26 @@ const navSlide = () => {
 // }
 
 // hundleMenu();
+
+
+
+
+const debu = document.querySelector("#debu")
+const fin = document.querySelector("#fin")
+
+
+const btn = document.querySelector(".btn_res")
+
+
+
+btn.addEventListener("click", (e) => {
+    const duree = (fin.valueAsDate - debu.valueAsDate)/86400000;
+
+    const link = document.createElement("a")
+    link.href= `/reservation.html?duration=${duree}`
+    link.style.display = "none"
+    document.body.appendChild(link)
+
+    link.click();
+    
+})

@@ -1,88 +1,90 @@
-.B_img{
-    width: 100%;
-    height: 85vh;
-    position: relative;
+.B_img {
+  width: 100%;
+  height: 85vh;
+  position: relative;
 }
 .B_img #img {
-    width: 100%;
-    
-    height: 85vh;
-    position: absolute;
-    z-index: 1;
+  width: 100%;
+
+  height: 85vh;
+  position: absolute;
+  z-index: 1;
 }
 #opa {
-    background-color: black;
-    width: 100%;
-    height: 85vh;
-    position: absolute;
-    z-index: 2;
-    opacity: 0.4;
+  background-color: black;
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.4;
 }
 #title {
-    position: absolute;
-    top: 4%;
-    left: 32%;
-    color: white;
-    z-index: 3;
-} 
+  position: absolute;
+  top: 4%;
+  left: 32%;
+  color: white;
+  z-index: 3;
+}
 #title p {
-    padding: 1% 0;
-    color: #0176AC;
-    font-size: 20px;
+  padding: 1% 0;
+  color: #0176ac;
+  font-size: 20px;
 }
 
 .zone_res {
-    max-width: 90%;
-    height: 300px;
-    background-color: #0176AC;
-    border-radius: 10px;
-    margin: 2% 5%;
-    
-    padding: 40px;
+  max-width: 90%;
+  height: 300px;
+  background-color: #0176ac;
+  border-radius: 10px;
+  margin: 2% 5%;
+
+  padding: 40px;
 }
 
-.ville input, .date input {
-    height: 20px;
-    padding: 20px;
-    margin-bottom: 25px;
-    border: 1px solid #e9eaea;
-    font-size: 14px;
-    border-radius: 5px;
+.ville input,
+.date input {
+  height: 20px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
 }
 .ville input {
-    width: 80%;
-    margin-left: 10%;
+  width: 80%;
+  margin-left: 10%;
 }
 .date input {
-    width: 200% ;
-    margin-left: ;
+  width: 200%;
+  margin-left: ;
 }
-.debu, .fin {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
+.debu,
+.fin {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
 }
 .date {
-    display: flex;
-    width: 100%;
-    gap: 17%;
+  display: flex;
+  width: 100%;
+  gap: 17%;
 }
 
 .btn_res {
-    padding: 2% 3%;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #0176AC;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 45px;
-    /* transition: all 0.3s ease 0s; */
-    /* cursor: pointer; */
-    outline: none;
-    margin: 2% 0% 0% 43%;
-   }
+  padding: 2% 3%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #0176ac;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 45px;
+  /* transition: all 0.3s ease 0s; */
+  /* cursor: pointer; */
+  outline: none;
+  margin: 2% 0% 0% 43%;
+}
 
 /* .ville input, .date input {
     width: 80%;
@@ -95,32 +97,73 @@
     border-radius: 5px;
 } */
 
+.part p {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.li_1 {
+  width: 85%;
+  height: 200px;
+  margin: 5% auto;
+  /* background-color: #eee; */
+  display: flex;
+}
+.li_1 img,
+.li_2 img {
+  width: 85%;
+}
+.li_2 {
+  width: 64%;
+  height: 200px;
+  margin-left: 20%;
+  /* background-color: #eee; */
+  display: flex;
+}
+
+.part_log {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 768px) {
-    #title {
-        color: #0176AC;
-    } 
-    #title p {
-        color: white;
-        font-size: 16px;
-        padding-right: 16%;
-    }
-    .zone_res {
-        max-width: 100%;
-        height: 360px;
-        border-radius: 0px;
-        margin: 0% 0%;
-        padding: 40px;
-    }
-    .date {
-        display: flex;
-        flex-direction: column;
-    }
-    .date input {
-        width: 89% ;
-        margin-left: ;
-    }
-    .btn_res{
-        padding: 4%;
-        margin: 2% 0% 0% 38%;;
-    }
+  #title {
+    color: #0176ac;
+  }
+  #title p {
+    color: white;
+    font-size: 16px;
+    padding-right: 16%;
+  }
+  .zone_res {
+    max-width: 100%;
+    height: 360px;
+    border-radius: 0px;
+    margin: 0% 0%;
+    padding: 40px;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+  .date input {
+    width: 89%;
+    margin-left: ;
+  }
+  .btn_res {
+    padding: 4%;
+    margin: 2% 0% 0% 38%;
+  }
+
+  .li_1,
+  .li_2 {
+    flex-direction: column;
+  }
+  .li_2 {
+    margin-top: 125%;
+  }
+  .part_log {
+    height: 1410px;
+  }
 }
